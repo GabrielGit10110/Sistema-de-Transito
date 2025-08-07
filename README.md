@@ -23,26 +23,27 @@ O sistema permite:
 1. Clone o repositório para a sua máquina local:
    ```bash
    git clone [https://github.com/GabrielGit10110/Sistema-de-Transito.git](https://github.com/GabrielGit10110/Sistema-de-Transito.git)
+   ```
+
 2. Navegue até o diretório do projeto:
-
-```bash
+    ```bash
     cd Sistema-de-Transito
-``` 
-3. Compile os arquivos .java a partir da pasta src:
+    ```
 
-```bash
+3. Compile os arquivos .java a partir da pasta src:
+    ```bash
     javac -d build/classes src/transito/*.java
-```
+    ```
 
 4. Execute o programa a partir da classe principal (Main):
 
-```bash
+    ```bash
    java -cp build/classes transito.Main
-```
+    ```
 
 Nota: Se você preferir, pode criar um arquivo .jar executável. Consulte a documentação do javac e jar para mais detalhes.
 
-Estrutura do Projeto
+**Estrutura do Projeto**
 A estrutura de diretórios do projeto é a seguinte:
 
 ```
