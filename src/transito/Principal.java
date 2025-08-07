@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author FATEC ZONA LESTE
  */
-public class Transito {
+public class Principal {
 
     /**
      * @param args the command line arguments
