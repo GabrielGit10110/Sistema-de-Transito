@@ -6,12 +6,12 @@ Este projeto é um sistema em Java para gerenciamento de dados de acidentes de t
 
 O sistema permite:
 * Registrar novos acidentes de trânsito, coletando informações como local, tipo de veículo, e gravidade.
-* Gerar estatísticas detalhadas sobre os acidentes, como número total de ocorrências, acidentes por região, e tipos de veículos envolvidos.
-* Persistência de dados: todas as informações são salvas em arquivos JSON, permitindo que os dados sejam carregados e utilizados em futuras execuções do programa.
+* Gerar estatísticas detalhadas sobre os acidentes, como número total de ocorrências, acidentes por região, e comparativos entre regiões.
+* Persistência de dados: todas as informações são salvas em arquivos TXT, permitindo que os dados sejam carregados e utilizados em futuras execuções do programa.
 
 ## Tecnologias Utilizadas
 * **Linguagem:** Java
-* **Persistência de Dados:** JSON (para salvar e carregar as informações)
+* **Persistência de Dados:** TXT (para salvar e carregar as informações)
 * **Interface:** Interface de linha de comando (CLI)
 
 ## Como Usar
