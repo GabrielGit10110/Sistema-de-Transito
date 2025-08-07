@@ -14,18 +14,18 @@ class Metodos {
 // preenche o vetor de vários tipos
 
     public Estatistica[] FcadastraEstatistica(Estatistica[] esta) throws IOException {
-        String NomeArquivo = "Dadinhos.txt";
+        String NomeArquivo = "data/dados.txt";
         BufferedWriter escreve = new BufferedWriter(new FileWriter( NomeArquivo));
-        
+
         for (int i = 0; i < esta.length; i++) {
             esta[i].CodCid = Integer.parseInt(JOptionPane.showInputDialog("Digite o código da cidade: "));
             escreve.write(Integer.toString(esta[i].CodCid));
             escreve.newLine();
-        
+
             esta[i].NomCid = JOptionPane.showInputDialog("Digite o nome da cidade: ");
             escreve.write(esta[i].NomCid);
             escreve.newLine();
-            
+
             esta[i].QtdAci = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de acidentes na cidade: "));
             escreve.write(Integer.toString(esta[i].QtdAci));
             escreve.newLine();
@@ -33,24 +33,24 @@ class Metodos {
         }
             System.out.println("Gravacao realizada!");
             escreve.close();
-            
+
         return esta;
 
     }
     public Estatistica[] FLeitura(Estatistica[] esta) throws IOException {
-        String NomeArquivo = "Dadinhos.txt";
+        String NomeArquivo = "data/dados.txt";
         BufferedReader ler = new BufferedReader(new FileReader(NomeArquivo));
-                
+
         for(int i = 0; i < esta.length; i++){
             esta[i].CodCid = Integer.parseInt(ler.readLine());
             esta[i].NomCid = ler.readLine();
             esta[i].QtdAci = Integer.parseInt(ler.readLine());
         }
-        
+
         System.out.println("Leitura Realizada");
-        
+
         ler.close();
-        
+
         return esta;
     }
 // consulta a quantidade de acidentes se for maior que 100 e menor que 500
